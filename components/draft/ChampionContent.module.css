@@ -1,0 +1,35 @@
+.ChampionContentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blueTeamPicks {
+    height: 830px;
+    width: 25%;
+    background: rgba(23, 19, 31, 0.9);
+}
+
+.redTeamPicks {
+    height: 830px;
+    width: 25%;
+    background: rgba(23, 19, 31, 0.9);
+}
+
+.championSplash {
+    position: relative;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    height: 170px;
+    border-bottom: 1px solid rgba(210 , 210 , 210 , 0.1);
+}
+
+
+.championName {
+    font-family: "Montserrat Light" , serif;
+    letter-spacing: 1px;
+    font-size: 28px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
