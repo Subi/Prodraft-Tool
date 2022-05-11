@@ -1,0 +1,107 @@
+.homeContainer {
+    padding-top: 275px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLogoContainer {
+    width: 50%;
+    color: #eaeaea;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleContainer {
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat" , serif;
+}
+
+.title {
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.draftLinksContainer {
+    padding-top: 85px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+.blueTeamLink::placeholder {
+    font-size: 20px;
+    padding-left: 2px;
+    color: rgba(210 , 210 , 210 , 1);
+}
+
+.redTeamLink::placeholder {
+    font-size: 20px;
+    padding-left: 2px;
+    color: rgba(210 , 210 , 210 , 1);
+}
+
+.blueTeamLink {
+    padding: 8px;
+    font-size: 20px;
+    font-family: "Montserrat" , serif;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(210 , 210 , 210 , 0.5);
+    background: transparent;
+    letter-spacing: 1px;
+    width: 42%;
+}
+
+.redTeamLink {
+    padding: 8px;
+    font-size: 20px;
+    font-family: "Montserrat" , serif;
+    letter-spacing: 1px;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(210 , 210 , 210 , 0.5);
+    background: transparent;
+    width: 42%;
+    margin: 50px 0;
+}
+
+.spectatorLink {
+    padding: 8px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Montserrat Light" , serif;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(210 , 210 , 210 , 0.5);
+    background: transparent;
+    width: 42%;
+}
+
+.linkGeneratorButtonContainer {
+    padding-top: 40px;
+}
+
+.linkGeneratorButton {
+    letter-spacing: 1px;
+    font-family: "Montserrat SemiBold"  , serif;
+    font-size: 18px;
+    background: white;
+    transform: skew(-5deg);
+    padding: 12px 45px;
+    text-decoration: none;
+    border: none;
+}
+
+.linkGeneratorButton:hover {
+  background-color: rgba(255 , 209 , 94 , 1);
+}

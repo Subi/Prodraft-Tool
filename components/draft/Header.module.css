@@ -29,7 +29,7 @@
     color: black;
     background: rgb(89,68,221);
     background: linear-gradient(106deg, rgba(89,69,221,1) 0%, rgba(92,72,229,1) 50%, rgba(111,107,246,1) 100%);
-    width: 45%;
+    width: 35%;
     display: flex;
     justify-content: space-between;
     padding: 20px 50px 0 50px;
@@ -58,7 +58,7 @@
     color: black;
     background: rgb(245,100,77);
     background: linear-gradient(106deg, rgba(245,100,77,1) 0%, rgba(249,66,74,1) 50%, rgba(247,50,60,1) 100%);
-    width: 45%;
+    width: 35%;
     display: flex;
     justify-content: space-between;
     padding: 20px 50px 0 50px;
