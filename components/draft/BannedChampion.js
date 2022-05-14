@@ -2,8 +2,11 @@ import classes from './Footer.module.css'
 
 function BannedChampion({image}){
     return (
-        <div className={classes.bannedChampion} style={{backgroundImage: `url(${image})` ,backgroundRepeat: "no-repeat" , backgroundSize: "cover"}}>
+        <div className={classes.bannedChampionContainer} style={{backgroundImage: `url(${image})`}}>
+            {/*<div className={classes.bannedChampion} style={{backgroundImage: `url(${image})`}}>*/}
+            {/*</div>*/}
         </div>
+
     )
 }
 

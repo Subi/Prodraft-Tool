@@ -6,24 +6,34 @@ function Footer() {
         <div className={classes.bannedChampionsContainer}>
             <div className={classes.blueSideBansContainer}>
                 <div className={classes.blueSideBansFirstPhaseContainer}>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_0.jpg"}/>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ryze_0.jpg"}/>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Karma_0.jpg"}/>
+                    <BannedChampion/>
+                    <BannedChampion/>
+                    <BannedChampion/>
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Hecarim.png"}/>*/}
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Ryze.png"}/>*/}
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Karma.png"}/>*/}
                 </div>
                 <div className={classes.blueSideBansSecondPhaseContainer}>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_0.jpg"}/>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rakan_0.jpg"}/>
+                    <BannedChampion/>
+                    <BannedChampion/>
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Malphite.png" }/>*/}
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Rakan.png"}/>*/}
                 </div>
             </div>
             <div className={classes.redSideBansContainer}>
                 <div className={classes.redSideBansFirstPhaseContainer}>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_0.jpg"}/>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nautilus_0.jpg"}/>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/TwistedFate_0.jpg"}/>
+                    <BannedChampion/>
+                    <BannedChampion/>
+                    <BannedChampion/>
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Zilean.png"}/>*/}
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Nautilus.png"}/>*/}
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/TwistedFate.png"}/>*/}
                 </div>
                 <div className={classes.redSideBansSecondPhaseContainer}>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Caitlyn_0.jpg"}/>
-                    <BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zeri_0.jpg"}/>
+                    <BannedChampion/>
+                    <BannedChampion/>
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Caitlyn.png"}/>*/}
+                    {/*<BannedChampion image={"https://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/Zeri.png"}/>*/}
                 </div>
             </div>
         </div>

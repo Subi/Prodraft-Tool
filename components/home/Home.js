@@ -1,7 +1,8 @@
 import classes from './Home.module.css'
 import Image from "next/image";
 import {useContext, useEffect, useState} from "react";
-import {io} from "socket.io-client";
+import {app , database} from "../../firebase/firebaseConfig"
+import {collection , addDoc , setDoc , doc} from 'firebase/firestore'
 import TeamNameInput from "./TeamNameInput";
 import TeamLinks from "./TeamLinks";
 import SpectatorView from "../../pages/draft/[roomId]";
@@ -10,14 +11,13 @@ import {DraftContext} from "../../context/state";
 
 
 function Home() {
+    // const dbInstance =  collection(database , "rooms")
     const [blueTeamLink , setBlueTeamLink] = useState('')
     const [redTeamLink , setRedTeamLink] = useState('')
     const [spectatorLink , setSpectatorLink] = useState('')
     const [redTeamName , setRedTeamName] = useState('')
     const [blueTeamName , setBlueTeamName] = useState('')
-
-    const {draft , updateDraft} = useContext(DraftContext)
-
+    const [draft , setDraft] = useState(null)
 
     useEffect(() => {
         if(!draft) return
@@ -44,6 +44,14 @@ function Home() {
     // }
 
 
+    const addDraft = (draft) => {
+        setDoc(doc(database, 'rooms' , draft.id) , draft).then(() => {
+            console.log(`Room ${draft.id} has been `)
+        }).catch((e) => {
+            console.log(`Error occurred saving draft data: ${e}`)
+        })
+    }
+
     const createDraft = async () => {
         const response = await fetch('/api/draft/create' , {
             method: "POST",
@@ -52,7 +60,9 @@ function Home() {
             },
             body: JSON.stringify({"r" :redTeamName , "b": blueTeamName})
         })
-        updateDraft(await response.json())
+        const data = await response.json()
+        setDraft(data)
+        addDraft(data)
     }
 
     return (

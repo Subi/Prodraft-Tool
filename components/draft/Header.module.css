@@ -1,82 +1,93 @@
 .headerContainer {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .timerContainer {
     display: flex;
-    flex-direction: column;
     text-align: center;
-    width: 10%;
+    width: 28%;
+    font-size: 48px;
 }
 
-.timerContainer span {
-    color: white;
-    font-size: 20px;
-    font-family: "Montserrat Light", serif;
-}
+/*.timerContainer span {*/
+/*    color: white;*/
+/*    font-size: 20px;*/
+/*    font-family: "Montserrat Light", serif;*/
+/*}*/
 
 
 .timer {
+    padding-top: 13px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 35px;
     color: white;
     letter-spacing: 2px;
-    font-family: "Montserrat Light", serif;
+    font-family: "Montserrat SemiBold", serif;
 }
 
 .blueTeamContainer {
     color: black;
-    background: rgb(89,68,221);
-    background: linear-gradient(106deg, rgba(89,69,221,1) 0%, rgba(92,72,229,1) 50%, rgba(111,107,246,1) 100%);
-    width: 35%;
+    background: rgb(82,65,216);
+    background: linear-gradient(25deg, rgba(82,65,216,1) 0%, rgba(82,65,216,1) 25%, rgba(85,64,219,1) 50%, rgba(100,86,242,1) 84%, rgba(113,111,246,1) 100%);
+    width:  35%;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 50px 0 50px;
-    font-family: "Montserrat ExtraBold", serif;
-}
+    /*justify-content: space-between;*/
+    /*font-family: "Montserrat ExtraBold", serif;*/
+    /*transform: skewX(-6deg);*/
+    padding: 10px 10px 10px 0;
+    margin-left: 2px;
 
+}
 
 
 .blueTeamName {
-    font-size: 65px;
-    letter-spacing: 2px;
-    padding-right: 25px;
+    margin: 0 auto;
+    width: 90%;
+    font-family: "Montserrat ExtraBold";
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.blueTeamLogo {
-    padding-top: 10px;
-    width: 120px;
-}
+/*.blueTeamLogo {*/
+/*    padding-top: 10px;*/
+/*    width: 120px;*/
+/*}*/
 
-.blueTeamScore {
-    font-size: 65px;
-    font-family: "Montserrat SemiBold" , serif;
-}
+/*.blueTeamScore {*/
+/*    font-size: 65px;*/
+/*    font-family: "Montserrat SemiBold" , serif;*/
+/*}*/
 
 .redTeamContainer {
     color: black;
     background: rgb(245,100,77);
-    background: linear-gradient(106deg, rgba(245,100,77,1) 0%, rgba(249,66,74,1) 50%, rgba(247,50,60,1) 100%);
+    background: linear-gradient(135deg, rgba(245,100,77,1) 0%, rgba(246,100,82,1) 25%, rgba(247,76,80,1) 50%, rgba(246,66,72,1) 75%, rgba(244,54,62,1) 100%);
     width: 35%;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 50px 0 50px;
-    font-family: "Montserrat ExtraBold", serif;
+    margin-right: 2px;
+    padding: 10px 0 10px 10px;
+    /*justify-content: space-between;*/
+    /*padding: 20px 50px 0 50px;*/
 }
 
 
 .redTeamName {
-    font-size: 65px;
-    letter-spacing: 2px;
-    padding-left: 110px;
+    margin: 0 auto;
+    width: 90%;
+    font-family: "Montserrat ExtraBold";
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.redTeamLogo {
-    width: 120px;
-}
+/*.redTeamLogo {*/
+/*    width: 120px;*/
+/*}*/
 
-.redTeamScore {
-    font-size: 65px;
-    font-family: "Montserrat SemiBold" , serif;
-}
+/*.redTeamScore {*/
+/*    font-size: 65px;*/
+/*    font-family: "Montserrat SemiBold" , serif;*/
+/*}*/
