@@ -12,15 +12,22 @@ const SocketHandler = (req, res) => {
 
 
         io.on('connection' , socket => {
-            socket.on('sendUpdate', msg => {
-                console.log(msg , socket)
+            socket.on('joinroom' , roomName => {
+                const room = io.sockets.adapter.rooms.get(roomName)
+                if(!room || room.size < 2) {// Check if the room exist or if the remove has less than 2 players
+                    console.log(`${socket.id} has successfully connected to ${roomName}`)
+                    socket.join(roomName)
+                } else {
+                    console.log("Room has exceeded the max amount of players") // Don't allow more than 2 players connected
+                }
             })
-
-
-            socket.on('createDraft' , msg => {
-                socket.emit('setDraftSettings' , createDraft(msg))
+            socket.on("ready up" , team => {
+                console.log(team ,"server side")
+                socket.broadcast.emit("ready up" , team )
             })
         })
+
+
         // io.of("/").adapter.on("create-room", (room) => {
         //     console.log(`room ${room} was created`);
         // });
@@ -33,24 +40,8 @@ const SocketHandler = (req, res) => {
     res.end()
 }
 
+// const refuseNewConnection()
 
-const generateRoomId = () => {
-    return Math.random().toString(21).slice(5)
-}
-
-const generateTeamId = () => {
-    return Math.random().toString(21).slice(8)
-}
-
-const createDraft = (msg) => {
-    return {
-        roomId: generateRoomId(),
-        blueTeamId: generateTeamId(),
-        redTeamId: generateTeamId(),
-        blueTeamName: msg.blueTeamName,
-        redTeamName: msg.redTeamName,
-    }
-}
 
 export default SocketHandler
 

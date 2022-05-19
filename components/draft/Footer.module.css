@@ -1,9 +1,41 @@
-.bannedChampionsContainer {
+.footerContainer {
     display: flex;
     width: 100%;
-    height: 135px;
+    height: 110px;
     justify-content: space-between;
     margin-top: 30px;
+}
+
+
+.readyButtonContainer {
+    margin-top: 23px;
+}
+
+.readyButton {
+    letter-spacing: 1px;
+    font-family: "Montserrat SemiBold"  , serif;
+    font-size: 19px;
+    background: white;
+    transform: skew(-5deg);
+    padding: 20px 90px;
+    text-decoration: none;
+    border: none;
+}
+
+.waitingButton {
+    letter-spacing: 1px;
+    font-family: "Montserrat SemiBold"  , serif;
+    font-size: 18px;
+    background: white;
+    transform: skew(-5deg);
+    padding: 20px 90px;
+    text-decoration: none;
+    border: none;
+    opacity: 0.5;
+}
+
+.readyButton:hover {
+    background-color: rgba(255 , 209 , 94 , 1);
 }
 
 
@@ -11,7 +43,6 @@
     display: flex;
     height: 100%;
     width: 100%;
-    border-right: 1px solid rgba(210 , 210 , 210 , 0.1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,6 +61,10 @@
     width: 28%;
 }
 
+.blueSideBansContainer .bannedChampionContainer {
+    border-right: 1px solid rgba(210 , 210 , 210 , 0.1);
+}
+
 
 .blueSideBansFirstPhaseContainer {
     width: 45%;
@@ -37,13 +72,10 @@
     margin-right: 25px;
 }
 
-
 .blueSideBansSecondPhaseContainer {
     width: 30%;
     display: flex;
 }
-
-
 
 
 .redSideBansContainer {
@@ -54,13 +86,15 @@
     margin-right: 15px;
 }
 
+.redSideBansContainer .bannedChampionContainer {
+    border-left: 1px solid rgba(210 , 210 , 210 , 0.1);
+}
 
 .redSideBansFirstPhaseContainer {
     width: 45%;
     display: flex;
     margin-right: 25px;
 }
-
 
 .redSideBansSecondPhaseContainer {
     width: 30%;

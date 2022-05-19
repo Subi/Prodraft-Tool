@@ -1,0 +1,91 @@
+.championsCarouselContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-top: 95px;
+}
+
+
+.championsCarousel {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 770px;
+}
+
+
+.championsCarousel::-webkit-scrollbar {
+    width: 18px;
+    border-radius: 20px;
+}
+
+.championsCarousel::-webkit-scrollbar-track {
+    background: #000915;
+    border-radius: 20px;
+}
+
+.championsCarousel::-webkit-scrollbar-thumb {
+    width: 24px;
+    background: rgba(255, 255, 255, .1);
+    border: 5px solid #000915;
+    border-radius: 15px;
+}
+
+
+.championOptionsGrid {
+    display: grid;
+    grid-template-columns: repeat(8,132px);
+    grid-row-gap: 8px;
+    padding: 0 1px;
+}
+
+
+.championOptionImage {
+    width: 120px;
+    height: 120px;
+}
+
+
+.championsCarouselFilterContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.rolesFilterContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 26%;
+    margin-left: 60px;
+}
+
+.searchbarFilter {
+    margin-top: 5px;
+    padding: 4px;
+    font-family: "Montserrat SemiBold";
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(219 , 219 , 219 , 0.2);
+    width: 80%;
+    text-transform: capitalize;
+}
+
+.searchbarFilter::placeholder {
+    font-family: "Montserrat Light";
+    color:  rgba(200 , 200 ,200 , 0.5);
+}
+
+.searchbarFilterContainer {
+    width: 25%;
+    margin-right: 75px;
+}

@@ -34,6 +34,12 @@
     align-content: space-between;
 }
 
+.linkTeamIcon {
+    position: relative;
+    top: 0;
+    left: 10px;
+}
+
 
 .blueTeamLink::placeholder {
     font-size: 20px;
@@ -48,7 +54,7 @@
 }
 
 .blueTeamLink {
-    padding: 8px;
+    padding: 3px;
     font-size: 20px;
     font-family: "Montserrat" , serif;
     color: white;
@@ -57,11 +63,19 @@
     border-bottom: 1px solid rgba(210 , 210 , 210 , 0.5);
     background: transparent;
     letter-spacing: 1px;
-    width: 42%;
+    width: 40%;
+}
+
+/*.blueTeamLink:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+.blueTeamLink:focus {
+    border-bottom: 1px solid  rgba(21,101,194 , 0.9);
 }
 
 .redTeamLink {
-    padding: 8px;
+    padding: 3px;
     font-size: 20px;
     font-family: "Montserrat" , serif;
     letter-spacing: 1px;
@@ -70,9 +84,18 @@
     outline: 0;
     border-bottom: 1px solid rgba(210 , 210 , 210 , 0.5);
     background: transparent;
-    width: 42%;
+    width: 40%;
     margin: 50px 0;
 }
+
+/*.redTeamLink:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+.redTeamLink:focus {
+    border-bottom: 1px solid rgba(255,105,105,0.8);
+}
+
 
 .spectatorLink {
     padding: 8px;
@@ -84,7 +107,12 @@
     outline: 0;
     border-bottom: 1px solid rgba(210 , 210 , 210 , 0.5);
     background: transparent;
-    width: 42%;
+    width: 40%;
+}
+
+
+.spectatorLink:hover {
+    cursor: pointer;
 }
 
 .linkGeneratorButtonContainer {

@@ -65,6 +65,7 @@ function Home() {
         addDraft(data)
     }
 
+
     return (
         <div className={classes.homeContainer}>
             <div className={classes.mainLogoContainer}>
@@ -76,7 +77,7 @@ function Home() {
                     {!blueTeamLink && !redTeamLink ? <TeamNameInput  setRedTeamName={setRedTeamName} setBlueTeamName={setBlueTeamName} /> : <TeamLinks blueLink={blueTeamLink} redLink={redTeamLink} spectatorLink={spectatorLink}/>}
                 </div>
                 <div className={classes.linkGeneratorButtonContainer}>
-                    <button className={classes.linkGeneratorButton} onClick={() => {createDraft()} }>Create</button>
+                    {!blueTeamLink && !redTeamLink ? <button className={classes.linkGeneratorButton} onClick={() => {createDraft()} }>Create</button> : <button className={classes.linkGeneratorButton} onClick={() => {setBlueTeamLink("") , setRedTeamLink("")} }>New Draft</button> }
                 </div>
             </div>
         </div>
