@@ -20,7 +20,7 @@ function TeamView(props) {
             socket.emit("joinroom" , draft.id)
         })
 
-        socket.on("ready up" , data => {
+        socket.on("ready up" , data => {21
             setDraft({...draft , [data]: {...draft[data] , isReady:true}})
             // console.log(draft)
         })
