@@ -3,7 +3,7 @@ import Champions from "./Champions";
 import Image from "next/image";
 
 
-function ChampionCarousel(props){
+function  ChampionCarousel(props){
     return (
         <div className={classes.championsCarouselContainer}>
             <div className={classes.championsCarouselFilterContainer}>
@@ -19,7 +19,7 @@ function ChampionCarousel(props){
                 </div>
             </div>
             <div className={classes.championsCarousel}>
-                <Champions champions={props.champions} updateDraftData={props.updateDraftData}/>
+                <Champions champions={props.champions} updateDraftData={props.updateDraftData} setPreviewChampion={props.setPreviewChampion}/>
             </div>
         </div>
     )

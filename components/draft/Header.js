@@ -3,16 +3,6 @@ import Image from 'next/image'
 import {useEffect, useState} from "react";
 
 function Header(props) {
-    const [time , setTime] = useState(30)
-
-    useEffect(() => {
-        if(time == 0 ) return
-        setTimeout(() => {
-            setTime(prevState => prevState - 1)
-        } ,  1000)
-    } , [time])
-
-
     return (
         <div className={classes.headerContainer}>
             <div className={classes.blueTeamContainer}>
@@ -27,7 +17,7 @@ function Header(props) {
                 {/*</div>*/}
             </div>
             <div className={classes.timerContainer}>
-                <span className={classes.timer}>{time}</span>
+                <span className={classes.timer}>30</span>
                 {/*<h3>:59</h3>*/}
                     {/*<h3 className={classes.timer}>:59</h3>*/}
 

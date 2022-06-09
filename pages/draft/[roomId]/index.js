@@ -27,7 +27,6 @@ function SpectatorView()  {
 
     useEffect(() => {
         if(!data) return
-        console.log(data , "this is the data")
     } , [data])
 
 

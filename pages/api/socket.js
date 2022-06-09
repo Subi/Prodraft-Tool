@@ -21,9 +21,16 @@ const SocketHandler = (req, res) => {
                     console.log("Room has exceeded the max amount of players") // Don't allow more than 2 players connected
                 }
             })
-            socket.on("ready up" , team => {
-                console.log(team ,"server side")
-                socket.broadcast.emit("ready up" , team )
+            socket.on("READY_UP" , team => {
+                socket.broadcast.emit("READY_UP" , team )
+            })
+
+            socket.on("NEXT_TURN" , () => {
+                socket.broadcast.emit("NEXT_TURN")
+            })
+
+            socket.on("previewChampion" , data => {
+                socket.broadcast.emit("previewChampion", data)
             })
         })
 
